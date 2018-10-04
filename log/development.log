@@ -7031,3 +7031,10 @@ Processing by PostsController#show as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "26"]]
   Rendered posts/show.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 48ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 8.47.97.101 at 2018-10-04 21:31:26 +0000
+Cannot render console from 8.47.97.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 28.2ms | ActiveRecord: 1.1ms)
