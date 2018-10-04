@@ -6937,3 +6937,10 @@ Processing by PostsController#create as */*
   [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
 Redirected to http://67.205.130.239:54349/posts/21
 Completed 200 OK in 69ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/new" for 8.47.97.101 at 2018-10-04 21:21:21 +0000
+Cannot render console from 8.47.97.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
