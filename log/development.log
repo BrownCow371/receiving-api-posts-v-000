@@ -7003,3 +7003,21 @@ Processing by PostsController#create as */*
   [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
 Redirected to http://67.205.130.239:54349/posts/25
 Completed 200 OK in 7ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/new" for 8.47.97.101 at 2018-10-04 21:24:05 +0000
+Cannot render console from 8.47.97.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 8.47.97.101 at 2018-10-04 21:24:09 +0000
+Cannot render console from 8.47.97.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CwkzmSpRWuXC7uXJ3BEM9sflyQLAkNjX4EqOTl/2HdszHRvv90r9OdL2QdCnUmYzBakVgbnnRuUNAUskxEc0vQ==", "post"=>{"title"=>"Why can I only change the title", "description"=>"Testing AJAX"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Why can I only change the title"], ["description", "Testing AJAX"], ["created_at", "2018-10-04 21:24:09.109013"], ["updated_at", "2018-10-04 21:24:09.109013"]]
+  [1m[35m (90.6ms)[0m  commit transaction
+Redirected to http://67.205.130.239:54349/posts/26
+Completed 200 OK in 96ms (ActiveRecord: 91.0ms)
